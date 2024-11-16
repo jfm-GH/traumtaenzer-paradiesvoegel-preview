@@ -16,13 +16,13 @@
       <!-- Main row -->
       <div class="flex flex-wrap">
         <!-- Artist Info Wrapper -->
-        <div class="mt-20 w-full lg:w-1/2">
+        <div id="WerBinIch" class="mt-20 w-full lg:w-1/2">
           <div class="sticky top-[var(--navbar-height)]">
             <about-the-artist :image="filteredArtistImage!" />
           </div>
         </div>
         <!-- Gallery section -->
-        <div class="w-full lg:w-1/2">
+        <div id="Gallerie" class="w-full lg:w-1/2">
           <p class="mt-20 pt-5 text-center text-4xl font-semibold">Gallerie</p>
           <div class="-p-5 flex flex-wrap">
             <div

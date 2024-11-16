@@ -9,7 +9,7 @@
       >
         <div
           ref="navBarElements"
-          class="relative order-2 h-full w-3/4 md:fixed md:right-16 md:top-0 md:w-auto md:pb-0"
+          class="relative order-2 h-full w-3/4 max-md:pb-5 max-md:pt-5 md:fixed md:right-16 md:top-0 md:w-auto md:pb-0"
         >
           <div class="ml-3 flex h-full items-center justify-between gap-4">
             <div class="font-bold md:hidden">Traumtänzer und Paradiesvögel</div>
@@ -30,19 +30,26 @@
           <li
             class="w-full rounded px-2 py-1 text-center transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
           >
-            <NuxtLink to="/" @click="toggleMenu">Home</NuxtLink>
+            <NuxtLink to="#" @click="handleClick(true)">Home</NuxtLink>
           </li>
-          <li
+          <!-- <li
             class="w-full rounded px-2 py-1 text-center transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
           >
             <NuxtLink to="/OnePageApp" @click="toggleMenu">OnePageApp</NuxtLink>
+          </li> -->
+          <li
+            class="w-full rounded px-2 py-1 text-center transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+          >
+            <NuxtLink to="#WerBinIch" @click="toggleMenu"
+              >Wer bin ich?</NuxtLink
+            >
           </li>
           <li
             class="w-full rounded px-2 py-1 text-center transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
           >
-            <NuxtLink to="/about" @click="toggleMenu">About</NuxtLink>
+            <NuxtLink to="#Gallerie" @click="toggleMenu">Gallerie</NuxtLink>
           </li>
-          <li
+          <!-- <li
             class="w-full min-w-fit justify-center rounded px-2 py-1 text-center transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
           >
             <button @click="toggleDropdown">
@@ -74,7 +81,7 @@
                 Details
               </NuxtLink>
             </div>
-          </li>
+          </li> -->
         </ul>
       </div>
     </header>
@@ -135,6 +142,16 @@ const toggleMenu = () => {
   }
   toggleMenuIcon();
 };
+const handleClick = (isHomeClicked: boolean) => {
+  // handle click on navbar link
+  // for now only implemendet for home link
+  // but should be extended for other links
+  // for consistency
+  if (isHomeClicked) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+  toggleMenu();
+};
 
 const applyHeroSectionStyles = () => {
   addClass(navLinks.value, "order-2", "pb-5");
@@ -143,12 +160,12 @@ const applyHeroSectionStyles = () => {
 };
 
 const toggleNavbarOrder = () => {
-  toggleClass(navLinks.value, "order-1", "order-2", "py-6", "pb-3");
+  toggleClass(navLinks.value, "order-1", "order-2", "pb-3");
   toggleClass(
     headerElement.value,
     "-translate-y-[calc(100%-var(--navbar-height))]",
   );
-  addClass(navBarElements.value, "pb-5", "pt-5");
+  addClass(navBarElements.value, "max-md:pb-5", "max-md:pt-5");
 };
 
 const toggleMenuIcon = () => {
@@ -253,7 +270,7 @@ const resetNavbarOrder = (
 };
 
 const applyNavbarPadding = () => {
-  addClass(navBarElements.value, "pb-5");
+  addClass(navBarElements.value, "max-md:pb-5");
   addClass(navLinks.value, "pb-3");
 };
 
