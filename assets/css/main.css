@@ -1,8 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --navbar-height: 3.5rem;
-  --navbar-height-px: calc(var(--navbar-height) * 16px);
-}
