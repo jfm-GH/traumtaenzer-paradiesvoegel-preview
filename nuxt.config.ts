@@ -37,4 +37,7 @@ export default defineNuxtConfig({
       scrollBehaviorType: "smooth",
     },
   },
+  nitro: {
+    preset: "static",
+  },
 });
