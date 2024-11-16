@@ -1,1 +1,0 @@
-import{c as e,o as s,a as t}from"./C6xSg7Om.js";const a={class:"card mx-auto mt-7 h-fit text-center"},o=t("p",{class:"mt-7 text-6xl text-black"},"Traumtänzer und Paradiesvögel",-1),c=t("p",{class:"my-20 text-6xl text-black"},"Coming soon...",-1),n=[o,c],i={__name:"index",setup(_){return(r,l)=>(s(),e("div",a,n))}};export{i as default};

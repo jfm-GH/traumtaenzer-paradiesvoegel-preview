@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.bg {
+  background-color: #d5d5cd;
+  background-size: auto 120%;
+  background-repeat: no-repeat;
+  background-position-x: -1200px;
+  background-position-y: -180px;
+  //transition: ease all 0.5s;
+  z-index: -1;
+}
+
+.top-section {
+  height: 100vh;
+
+  .top-section-text {
+    position: relative;
+    bottom: -200px;
+  }
+}
+
+.second-section {
+  @extend .top-section;
+  position: relative;
+
+  .second-section-text {
+    position: relative;
+
+    z-index: 2;
+  }
+
+  .second-section-image {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+.dev-border {
+  border: 1px solid red;
+}
+
+/* Small devices (576px and up) */
+@media (min-width: 576px) and (orientation: portrait) {
+  .masthead {
+    background-position: -1100px -180px; /* Adjust as needed */
+    transition: ease all 0.5s;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (orientation: portrait) {
+  .masthead {
+    background-position: -900px -180px; /* Adjust as needed */
+    transition: ease all 0.5s;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (orientation: portrait) {
+  .masthead {
+    /* Adjust background-size and position for larger screens */
+    background-size: auto 125%;
+    background-position-x: -750px;
+    background-position-y: center;
+    transition: ease all 0.5s;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (orientation: portrait) {
+  .masthead {
+    background-size: cover;
+    background-position: center;
+    transition: ease all 0.5s;
+  }
+}
+
+/* Adjustments for landscape orientation
+    todo: adapt to all screen sizes / variations */
+@media (max-width: 1200) and (orientation: landscape) {
+  .masthead {
+    background-size: 140% auto; /* Adjust the size for landscape */
+    background-position: center -100px; /* Center the image */
+  }
+}
