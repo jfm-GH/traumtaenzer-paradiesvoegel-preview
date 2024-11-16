@@ -32,4 +32,9 @@ export default defineNuxtConfig({
       baseURL: "http://www.traumtaenzer-paradiesvoegel.de",
     },
   },
+  router: {
+    options: {
+      scrollBehaviorType: "smooth",
+    },
+  },
 });
