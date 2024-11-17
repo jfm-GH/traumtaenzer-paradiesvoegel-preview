@@ -3,7 +3,13 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   components: { global: true, dirs: ["~/components"] },
   devtools: { enabled: true },
-  modules: ["@nuxt/eslint", "@nuxt/ui", "@vueuse/nuxt", "@nuxt/image"],
+  modules: [
+    "@nuxt/eslint",
+    "@nuxt/ui",
+    "@vueuse/nuxt",
+    "@nuxt/image",
+    "nuxt-gtag",
+  ],
   app: {
     head: {
       title: "traumtaenzer-paradiesvoegel",
@@ -36,5 +42,8 @@ export default defineNuxtConfig({
     options: {
       scrollBehaviorType: "smooth",
     },
+  },
+  gtag: {
+    id: "G-59KBT095C7",
   },
 });

@@ -26,6 +26,7 @@
     "animate-sass": "^0.8.2",
     "eslint-config-prettier": "^9.1.0",
     "nuxt": "^3.12.4",
+    "nuxt-gtag": "^3.0.1",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.6",
     "sass": "^1.69.5",
