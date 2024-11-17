@@ -29,7 +29,7 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   image: {
     cloudflare: {
-      baseURL: "http://www.traumtaenzer-paradiesvoegel.de",
+      baseURL: "https://www.traumtaenzer-paradiesvoegel.de",
     },
   },
   router: {
