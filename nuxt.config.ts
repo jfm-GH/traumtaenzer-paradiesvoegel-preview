@@ -35,6 +35,7 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   image: {
     cloudflare: {
+      // implementation see https://github.com/nuxt/image/issues/805#issuecomment-2483628222
       baseURL: "https://www.traumtaenzer-paradiesvoegel.de",
     },
   },
