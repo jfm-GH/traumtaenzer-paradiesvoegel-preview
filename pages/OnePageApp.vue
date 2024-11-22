@@ -24,6 +24,9 @@
         <!-- Gallery section -->
         <div id="Gallerie" class="w-full lg:w-1/2">
           <p class="mt-20 pt-5 text-center text-4xl font-semibold">Gallerie</p>
+          <p class="text-center text-lg">
+            Alles sind Unikate (und bleiben es auch)
+          </p>
           <div class="-p-5 flex flex-wrap">
             <div
               v-for="(image, index) in filteredGalleryImages"
