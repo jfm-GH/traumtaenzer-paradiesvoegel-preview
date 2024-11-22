@@ -1,22 +1,23 @@
-import img1 from "/gallery-images/20240214_160053.jpg";
+// import img1 from "/gallery-images/20240214_160053.jpg"; // Aktuell nicht klar, ob die Figur noch da ist
 import img2 from "/gallery-images/20240403_123722.jpg";
-import img3 from "/gallery-images/20240413_161011.jpg";
-import img4 from "/gallery-images/20240506_182649.jpg";
-import img5 from "/gallery-images/20240622_165243.jpg";
-import img6 from "/gallery-images/20240624_132334.jpg";
+import img3 from "/gallery-images/20241110_144100.jpg";
+import img4 from "/gallery-images/20241110_144940.jpg";
+import img5 from "/gallery-images/20241110_145128.jpg";
+import img6 from "/gallery-images/20241110_145638.jpg";
 import img7 from "/gallery-images/20240626_184948.jpg";
 import img8 from "/gallery-images/20240822_183850.jpg";
-import img9 from "/gallery-images/20241013_135919.jpg";
+import img9 from "/gallery-images/20241110_145932.jpg";
+import img10 from "/gallery-images/20241110_150102.jpg";
 import img12 from "/Artist-Ingride.jpg";
 
 const images = [
-  {
+  /* {
     path: img1,
     blurHash: "U99tH6kQEnRW00t8MvIoyGs;%3NXwgWnNyn+",
     alt: "image 1",
     caption: "Figur 1",
     category: "gallery",
-  },
+  }, */
   {
     path: img2,
     blurHash: "U7E-:Y2c00j_4q$$JB%1rAOY_NwJIDWUS}X9",
@@ -71,6 +72,13 @@ const images = [
     blurHash: "UEBEZ^Dlm.RP~TRPoyM}Husmb[NHoya$M|xt",
     alt: "image 9",
     caption: "Figur 9",
+    category: "gallery",
+  },
+  {
+    path: img10,
+    blurHash: "U7E-:Y2c00j_4q$$JB%1rAOY_NwJIDWUS}X9",
+    alt: "image 10",
+    caption: "Figur 10",
     category: "gallery",
   },
   {

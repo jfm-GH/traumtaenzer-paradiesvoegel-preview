@@ -3,7 +3,6 @@
     <NuxtImg
       :src="imagePath"
       :alt="alt"
-      provider="cloudflare"
       class="h-auto w-full cursor-pointer rounded-md object-cover"
       placeholder
       :modifiers="{ rotate: 90 }"
