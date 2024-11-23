@@ -23,10 +23,27 @@
         </div>
         <!-- Gallery section -->
         <div id="Gallerie" class="w-full lg:w-1/2">
-          <p class="mt-20 pt-5 text-center text-4xl font-semibold">Gallerie</p>
-          <p class="text-center text-lg">
+          <p
+            class="mt-20 pt-5 text-center font-kablammo text-4xl font-semibold"
+          >
+            Gallerie
+          </p>
+          <p class="mt-3 text-center text-lg">
             Alles sind Unikate (und bleiben es auch)
           </p>
+          <!-- To test the responsive image delivery with srcset
+              you have to resize the actual browser window and not 
+              use the chrome responsive mode slide. After resizing 
+              you have to hard refresh (ctrl + shift + r). Then the 
+              correct image for the current breakpoint should show. -->
+          <!--           <img
+            src="
+              /hero-images/20241110_144100.jpg"
+            srcset="
+              /hero-images/20241110_144100.jpg 600w,
+              /hero-images/Hero1.png           800w
+            "
+          /> -->
           <div class="-p-5 flex flex-wrap">
             <div
               v-for="(image, index) in filteredGalleryImages"
@@ -84,11 +101,11 @@ import images from "@/data/updatedImages.js";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import hero5 from "/hero-images/20241110_152336.jpg";
-import hero4 from "/hero-images/20241110_145932.jpg";
-import hero3 from "/hero-images/20241110_145339.jpg";
-import hero2 from "/hero-images/20241110_145132.jpg";
-import hero1 from "/hero-images/20241110_144100.jpg";
+import hero1 from "/hero-images/Hero1.png";
+import hero2 from "/hero-images/Hero2.png";
+import hero3 from "/hero-images/Hero3.png";
+import hero4 from "/hero-images/Hero4.png";
+import hero5 from "/hero-images/Hero5.png";
 import type HeroSection from "~/components/HeroSection.vue";
 
 definePageMeta({
