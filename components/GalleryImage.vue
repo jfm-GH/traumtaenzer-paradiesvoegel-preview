@@ -16,7 +16,7 @@
 
 <script setup lang="ts">
 import { decode } from "blurhash";
-
+// comment for action triggering
 const props = defineProps<{
   imagePath: string;
   blurHash: string;
