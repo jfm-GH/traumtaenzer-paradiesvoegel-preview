@@ -5,7 +5,8 @@
       :alt="alt"
       class="h-auto w-full cursor-pointer rounded-md object-cover"
       placeholder
-      :modifiers="{ rotate: 90 }"
+      provider="cloudflare"
+      :modifiers="computedModifiers"
       @load="onImageLoad"
     />
 
@@ -22,6 +23,7 @@ const props = defineProps<{
   blurHash: string;
   alt: string;
   caption: string;
+  modifiers?: Record<string, string | number>;
 }>();
 
 const imageLoaded = ref(false);
@@ -52,5 +54,9 @@ const onImageLoad = () => {
 
 onMounted(() => {
   displayBlurHash();
+});
+
+const computedModifiers = computed(() => {
+  return props.modifiers || { rotate: 90 };
 });
 </script>
