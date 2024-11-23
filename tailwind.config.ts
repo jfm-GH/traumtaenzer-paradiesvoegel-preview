@@ -18,6 +18,11 @@ export default {
         },
       },
     }, */
+    extend: {
+      fontFamily: {
+        kablammo: ["Kablammo", "sans-serif"],
+      },
+    },
   },
   plugins: [],
   darkMode: "class",
