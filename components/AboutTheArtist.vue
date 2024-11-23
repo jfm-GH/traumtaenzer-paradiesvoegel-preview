@@ -2,7 +2,7 @@
   <div class="mb-3 flex flex-wrap rounded-lg p-3 lg:shadow">
     <!-- Headline for below md -->
     <h6
-      class="mt-20 block w-full pb-5 text-center text-4xl font-semibold md:hidden"
+      class="font-kablammo mt-20 block w-full pb-5 text-center text-4xl font-semibold md:hidden"
     >
       Wer bin ich?
     </h6>
@@ -41,7 +41,7 @@
 
       <!-- Artist Bio -->
 
-      <h6 class="mt-20 py-5 text-center text-4xl font-semibold">
+      <h6 class="font-kablammo mt-20 py-5 text-center text-4xl font-semibold">
         Was mache ich?
       </h6>
       <p class="text-sm">

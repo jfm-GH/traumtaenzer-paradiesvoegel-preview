@@ -18,13 +18,29 @@ export default defineNuxtConfig({
       },
       meta: [
         { charset: "utf-8" },
-        { name: "description", content: "Page about handmade figures" },
+        {
+          name: "description",
+          content: "A page that showcases Ingride's handmade clay figures.",
+        },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
       ],
       link: [
         {
           rel: "stylesheet",
           href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+        },
+        {
+          rel: "preconnect",
+          href: "https://fonts.googleapis.com",
+        },
+        {
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+          crossorigin: "",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Kablammo&family=Shadows+Into+Light&display=swap",
         },
       ],
     },
@@ -35,6 +51,7 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   image: {
     cloudflare: {
+      // implementation see https://github.com/nuxt/image/issues/805#issuecomment-2483628222
       baseURL: "https://www.traumtaenzer-paradiesvoegel.de",
     },
   },

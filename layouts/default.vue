@@ -152,7 +152,7 @@ const onIntersectionObserver = (entries: IntersectionObserverEntry[]) => {
   if (screenWidth.value >= mdBreakpoint) {
     return; // Exit early if the screen width is not below the md breakpoint
   }
-  console.log("Intersection ratio: ", intersectionRatio);
+  // console.log("Intersection ratio: ", intersectionRatio);
 
   if (!isIntersecting) {
     // headerElement.value?.classList.add("fixed", "top-0", "w-full");
@@ -164,7 +164,7 @@ const onIntersectionObserver = (entries: IntersectionObserverEntry[]) => {
     ? "Navbar is visible"
     : "Navbar is not visible";
 
-  console.log(visibilityMessage);
+  // console.log(visibilityMessage);
 };
 
 // watch scrollY to check if scrollY is equal to 0, if so remove classes 'fixed' and 'top-0' 'w-full' from the header element
