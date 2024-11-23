@@ -18,7 +18,10 @@ export default defineNuxtConfig({
       },
       meta: [
         { charset: "utf-8" },
-        { name: "description", content: "Page about handmade figures" },
+        {
+          name: "description",
+          content: "A page that showcases Ingride's handmade clay figures.",
+        },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
       ],
       link: [
