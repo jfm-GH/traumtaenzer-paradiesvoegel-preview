@@ -240,10 +240,10 @@ const heroSectionInfos = ref<ISectionInfo[]>([]);
 
 const addToSectionsRef = (heroSection: ISectionInfo) => {
   // console.log("Entering addToSectionsRef");
-  // console.log(
+  /* console.log(
     "elInfo.el.clientHeight",
     heroSection.heroSectionDiv.clientHeight,
-  );
+  ); */
   // console.log("bg", heroSection.heroBgDiv);
   // console.log("index", heroSection.index);
   heroSectionInfos.value.push(heroSection);

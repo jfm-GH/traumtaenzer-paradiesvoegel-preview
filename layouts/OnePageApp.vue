@@ -127,10 +127,10 @@ const toggleMenu = () => {
   isNavbarOpen.value = !isNavbarOpen.value;
   // console.log("entering toggleMenu");
   // console.log("isNavbarOpen.value: ", isNavbarOpen.value);
-  // console.log(
+  /* console.log(
     "navBarOrderChangeIsQueuedUp.value: ",
     navBarOrderChangeIsQueuedUp.value,
-  );
+  ); */
   if (heroSectionsDivIsVisible.value) {
     applyHeroSectionStyles();
   } else {
