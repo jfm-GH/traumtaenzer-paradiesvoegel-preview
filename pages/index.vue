@@ -273,7 +273,6 @@ const initParallax = () => {
     // console.log("window.innerHeight", window.innerHeight);
     // console.log("section.offsetHeight", section.heroSectionDiv.offsetHeight);
     // console.log("getRatio", getRatio(section.heroSectionDiv.offsetHeight));
-    // test
     gsap.fromTo(
       section.heroBgDiv,
       {
