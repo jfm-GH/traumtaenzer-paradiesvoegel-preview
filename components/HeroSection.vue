@@ -3,7 +3,7 @@
     <div
       ref="heroBgDiv"
       :v-show="showPlaceholderImageWhileLoading"
-      class="relative flex items-start justify-center bg-cover bg-center bg-no-repeat md:w-7/12"
+      class="relative flex items-start justify-center bg-cover bg-[44%] bg-no-repeat md:w-7/12 md:bg-center"
       :class="{
         'h-screen md:h-[calc(100vh-var(--navbar-height))]':
           props.bgImage.order === 1,
