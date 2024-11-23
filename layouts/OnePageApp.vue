@@ -125,9 +125,9 @@ watch(isDarkMode, (newVal) => {
 
 const toggleMenu = () => {
   isNavbarOpen.value = !isNavbarOpen.value;
-  console.log("entering toggleMenu");
-  console.log("isNavbarOpen.value: ", isNavbarOpen.value);
-  console.log(
+  // console.log("entering toggleMenu");
+  // console.log("isNavbarOpen.value: ", isNavbarOpen.value);
+  // console.log(
     "navBarOrderChangeIsQueuedUp.value: ",
     navBarOrderChangeIsQueuedUp.value,
   );

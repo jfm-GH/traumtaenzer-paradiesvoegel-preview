@@ -89,7 +89,7 @@ const emit = defineEmits<{
 }>();
 
 onMounted(() => {
-  console.log("HeroSection mounted");
+  // console.log("HeroSection mounted");
   // const elHeight = element.clientHeight;
   if (!heroBgDiv.value) {
     console.error("bg element not found");
@@ -103,8 +103,8 @@ onMounted(() => {
     heroBgDiv: heroBgDiv.value,
     index: props.bgImage.order,
   };
-  console.log("heroSectionDiv element: ", heroSectionDiv);
-  console.log("heroSectionDiv index: ", elInfo.index);
+  // console.log("heroSectionDiv element: ", heroSectionDiv);
+  // console.log("heroSectionDiv index: ", elInfo.index);
   emit("heroSectionMounted", elInfo);
 });
 
