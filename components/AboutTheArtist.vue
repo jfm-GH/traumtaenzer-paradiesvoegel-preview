@@ -13,7 +13,7 @@
         :blur-hash="props.image.blurHash"
         :alt="props.image.alt"
         :caption="props.image.caption"
-        :modifiers="{ width: '500px' }"
+        :modifiers="{ width: 500 }"
       />
     </div>
 
