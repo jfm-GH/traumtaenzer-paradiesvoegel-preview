@@ -63,4 +63,17 @@ export default defineNuxtConfig({
   gtag: {
     id: "G-59KBT095C7",
   },
+  nitro: {
+    preset: "github-pages",
+  },
+  icon: {
+    clientBundle: {
+      scan: true, // the clientBundle.scan option will do a static scan for all components/markdowns and include them in the client bundle.
+      // see https://github.com/nuxt/icon/pull/243#issue-2488902750 and
+      // https://github.com/nuxt/icon/issues/34
+      // -> necessary for static site generation
+    },
+    // no need to create a server bundle for static site generation
+    serverBundle: false,
+  },
 });

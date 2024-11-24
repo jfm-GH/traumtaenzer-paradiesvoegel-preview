@@ -20,7 +20,9 @@
     <!-- Text Column -->
     <div class="w-full pl-5 md:w-1/2">
       <!-- Headline for md and above -->
-      <h6 class="hidden pb-5 text-center text-4xl font-semibold md:block">
+      <h6
+        class="hidden pb-5 text-center font-kablammo text-4xl font-semibold md:block"
+      >
         Wer bin ich?
       </h6>
       <!-- Artist Info -->
