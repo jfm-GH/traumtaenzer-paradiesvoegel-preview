@@ -57,6 +57,6 @@ onMounted(() => {
 });
 
 const computedModifiers = computed(() => {
-  return props.modifiers || { rotate: 90 };
+  return props.modifiers || { rotate: 0 };
 });
 </script>
