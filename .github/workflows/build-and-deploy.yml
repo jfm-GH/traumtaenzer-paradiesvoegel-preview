@@ -5,8 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - live
-      - cloudflare-external
+      - cloudflare-external-preview
 
 jobs:
   build:
